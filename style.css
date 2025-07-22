@@ -32,7 +32,7 @@
 }
 
 .main > h1{
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
 }
 
@@ -100,7 +100,7 @@
     /*    background: #f0f0f0;*/
     /*}*/
     #countdown {
-        width: 100%;
+        width: 320px;
         height: 60px;
         align-items: center;
         color: #fff;
