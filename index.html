@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="preload" as="font" href="/wedding-site/fonts/ArtiRegular.woff2" type="font/woff2" crossorigin>
+    <!--    <link rel="preload" as="font" href="fonts/ArtiRegular.woff2" type="font/woff2" crossorigin>-->
+    <title>Document</title>
+</head>
+<body>
+<audio id="wedding-song" src="./music/music.mp3" loop></audio>
+
+
+<div class="main">
+    <h1>Արթուր & <br><span style="margin-left: 150px;">Վարսիկ</span></h1>
+    <p class="data">14 Օգոստոսի 2025</p>
+    <small>Հարսանիքին մնաց</small>
+    <div id="countdown"></div>
+    <div class="v-box"></div>
+</div>
+<div class="bg" id="target-section">
+    <div>
+        <h2 style="font-size: 40px">Ընկերներ <br> Եվ <br> Բարեկամներ</h2>
+        <div class="topDiv">Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևոր և հիշարժան օրը</div>
+        <div class="bottomDiv">
+            <p>Սպասում ենք Ձեզ մեր հարսանիքին</p>
+            <span> 14.08.25</span>
+        </div>
+
+    </div>
+    <div class="imgs">
+        <div class="imgDiv">
+            <img src="images/left.jpg" alt="">
+        </div>
+        <div class="imgDiv imgDiv2">
+            <img src="./images/right.jpg" id="rightImg" alt="">
+        </div>
+    </div>
+    <h1>ՕՐՎԱ <br>ԾՐԱԳԻՐԸ</h1>
+    <img src="./images/mat.png" class="mataniImg">
+    <p style="font-weight: 400;letter-spacing: 0.5px; font-size: 20px">
+        ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ
+    </p>
+    <p style="font-size: 18px;margin: 5px 0">13:00</p>
+    <p style="font-size: 18px">
+        Հայրավանք եկեղեցի
+    </p>
+    <span style="text-align: center;font-size: 15px;font-weight: 200;margin: 15px 0">
+       Գեղարքունիքի մարզ, <br> Հայրավանք գյուղ
+    </span>
+    <a href="https://www.google.com/maps/place/Hayravank+Monastery/@40.4327142,45.1055629,17z/data=!3m1!4b1!4m6!3m5!1s0x40406d545d002f2f:0x9ab481d4254f0fe!8m2!3d40.4327101!4d45.1081378!16s%2Fm%2F056gvsl?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+       target="blank">
+        <button style="width: 180px; height: 45px; border-radius: 20px;background-color:#262626;color: white;border: none;font-size: 17px;letter-spacing: 0.5px;cursor: pointer">
+            Ինչպես հասնել
+        </button>
+    </a>
+    <img src="./images/bajak.png" class="mataniImg bajak">
+    <p style="font-weight: 400;letter-spacing: 0.5px; font-size: 20px">
+        ԽՆՋՈՒՅՔ
+    </p>
+    <p style="font-size: 18px;margin: 5px 0">17:30</p>
+    <p style="font-size: 18px">
+        Ginats Restaurant Complex
+    </p>
+    <span style="text-align: center;font-size: 15px;font-weight: 200;margin: 15px 0">
+     Կոտայքի մարզ, ք. Չարենցավան, Գայի 3
+    </span>
+    <a href="https://www.google.com/maps/dir/40.1997824,44.4792832/40.4076788,44.64444/@40.3032583,44.3506875,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+       target="_blank">
+        <button style="width: 180px; height: 45px; border-radius: 20px;background-color:#262626;color: white;border: none;font-size: 17px;letter-spacing: 0.5px;cursor: pointer">
+            Ինչպես հասնել
+        </button>
+    </a>
+    <h3 class="submit">Խնդրում ենք հաստատել Ձեր <br> ներկայությունը միջոցառմանը</h3>
+    <p id="wait">Սպասում ենք Ձեր պատասխանին <br> մինչև սեպտեմբերի 10-ը </p>
+    <form style=" width: 300px;" class="form" id="rsvp-form">
+        <div>
+            <input type="radio" id="hars" name="qanak" style="margin-right: 5px" value="Հարսի կողմ" required>
+            <label for="hars">Հարսի կողմ</label>
+        </div>
+        <div>
+            <input type="radio" id="pesa" name="qanak" style="margin-right: 5px" value="Փեսայի կողմ" required>
+            <label for="pesa">Փեսայի կողմ</label>
+        </div>
+
+        <input type="text" placeholder="Անուն Ազգանուն" class="nameLast" style="font-weight: 100" name="anun" required>
+        <div>
+            <input type="radio" id="ok" name="select" style="margin-right: 5px" value="Մենք կգանք" required>
+            <label for="ok">Մենք կգանք</label>
+        </div>
+        <div>
+            <input type="radio" id="no" name="select" style="margin-right: 5px" value="Չենք կարող գալ" required>
+            <label for="no">Չենք կարող գալ</label>
+        </div>
+        <button class="submit2">Ուղարկել</button>
+
+
+    </form>
+    <div style="display: flex ; align-items: center; flex-direction: column;justify-content: center">
+        <h1 style="width: 300px;font-size: 23px; display:flex;margin: 50px 0 0 0; font-weight: 600; justify-content:center;">
+            Սիրով սպասում ենք Ձեզ</h1>
+        <img src="./images/finak.png" alt="" width="100" height="100">
+    </div>
+
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+</body>
+</html>
